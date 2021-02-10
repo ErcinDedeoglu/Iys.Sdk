@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 5.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: src/Iys.SDK
+      working-directory: src/Iys.SDK/Iys.SDK.csproj
     - name: Build
       run: dotnet build --no-restore
     - name: Test
